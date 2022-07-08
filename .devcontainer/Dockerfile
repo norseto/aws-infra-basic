@@ -9,4 +9,6 @@ ARG REMOTE_USER=vscode
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 RUN mkdir -p /home/$REMOTE_USER/.vscode-server/extensions \
-    && chown -R $REMOTE_USER /home/$REMOTE_USER/.vscode-server
+        /home/$REMOTE_USER/.aws \
+    && chown -R $REMOTE_USER /home/$REMOTE_USER/.vscode-server \
+        /home/$REMOTE_USER/.aws 
