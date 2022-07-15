@@ -1,2 +1,3 @@
-# aws-playground
-My AWS Playground Code
+# aws-infra-basic
+AWS Infra Sample Basic Code.
+
