@@ -2,7 +2,7 @@ global:
   environ: test
 
 vpc:
-  name: peppy-ratio-vpc
+  name: sample-vpc
   cidr: 10.0.0.0/16
 
   azs:

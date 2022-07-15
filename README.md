@@ -1,2 +1,3 @@
 # aws-infra-basic
-AWS Infra Basic Code
+AWS Infra Sample Basic Code.
+

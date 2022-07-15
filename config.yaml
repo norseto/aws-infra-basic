@@ -1,10 +1,8 @@
-# AWS Provider
+# AWS Provider Configurations
 aws:
-  # provider_version: "~> 3.52.0"
-
   # Backend configuration
-  backend_bucket: "terraform-tfstate"
-  backend_lock: "terraform-tflock"
+  backend_bucket: sample-tfstate
+  backend_lock: sample-tflock
 
   # Common configuration
   default_region: ap-northeast-1

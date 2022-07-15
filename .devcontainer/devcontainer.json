@@ -22,9 +22,10 @@
 	"remoteUser": "vscode",
 	"features": {
 		"docker-from-docker": "latest",
-		"terraform": "1.1",
 		"norseto/vsc-feature/python-pip3": {},
         "norseto/vsc-feature/awscli": {},
+        "norseto/vsc-feature/terraform-tools": {},
+		"terraform": "1.1"
 	},
 
 	"remoteEnv": {
