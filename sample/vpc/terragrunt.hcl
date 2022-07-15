@@ -4,8 +4,10 @@ include "root" {
 }
 
 locals {
-  vpc = include.root.inputs.vpc
-  name = "${include.root.inputs.prefix}${local.vpc.name}"
+  vpc = merge(
+    include.root.inputs.vpc,
+    { name = "${include.root.inputs.prefix}${include.root.inputs.vpc.name}" }
+  )
 }
 
 
@@ -14,6 +16,5 @@ terraform {
 }
 
 inputs = merge(
-    include.root.inputs.vpc,
-    {name = local.name}
+  local.vpc
 )

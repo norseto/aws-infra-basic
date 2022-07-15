@@ -45,7 +45,10 @@ provider "aws" {
 EOF
 }
 
-inputs = merge({
+inputs = merge(
+  {
     prefix: "${local.prefix}"
     aws_account_id: local.aws_account_id
-  }, local.globals )
+  },
+  local.globals
+)
