@@ -1,5 +1,5 @@
 locals {
-  globals = yamldecode(file("${find_in_parent_folders("globals.yaml")}"))
+  globals  = yamldecode(file("${find_in_parent_folders("globals.yaml")}"))
   env_vars = read_terragrunt_config(find_in_parent_folders("env.hcl"))
   env_name = local.env_vars.locals.env
   prefix   = length(local.env_name) > 0 ? "${local.env_name}-" : ""
