@@ -8,3 +8,7 @@ First release.
 ## v0.2.0
 - Upgrade terraform version to 1.2.
 - Add [diagrams](https://diagrams.mingrammer.com/)
+
+## v0.3.0
+- Upgrade terraform version to 1.4
+- Upgrade container Debian version to bullseys
