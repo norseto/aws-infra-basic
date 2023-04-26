@@ -1,7 +1,9 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/debian/.devcontainer/base.Dockerfile
+# If you have trouble building container image around docker.io/docker/dockerfile:1.4,
+# see https://github.com/microsoft/vscode-remote-release/issues/6920#issuecomment-1271484634
 
 # [Choice] Debian version (use bullseye on local arm64/Apple Silicon): bullseye, buster
-ARG VARIANT="buster"
+ARG VARIANT="bullseye"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 ARG REMOTE_USER=vscode
