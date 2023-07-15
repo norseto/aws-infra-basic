@@ -14,7 +14,7 @@ locals {
 
 
 terraform {
-  source = "${local.source_base_url}?version=3.14.2"
+  source = "${local.source_base_url}?version=4.0.2"
 }
 
 inputs = merge(

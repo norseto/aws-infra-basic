@@ -12,5 +12,10 @@ ARG REMOTE_USER=vscode
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 RUN mkdir -p /home/$REMOTE_USER/.vscode-server/extensions \
         /home/$REMOTE_USER/.aws \
+        /home/$REMOTE_USER/.terraform.d \
+        /tmp/terragrunt-cache \
     && chown -R $REMOTE_USER /home/$REMOTE_USER/.vscode-server \
-        /home/$REMOTE_USER/.aws 
+        /home/$REMOTE_USER/.aws \
+        /home/$REMOTE_USER/.terraform.d \
+        /tmp/terragrunt-cache
+
